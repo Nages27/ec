@@ -1,0 +1,23 @@
+{% extends 'ecw/base.html' %}
+{% block title %}DashBoard{% endblock %}
+
+<header>
+        <h1>Hostinger</h1>
+<nav>
+        <ul>
+            <li><a href="{% url 'profile' %}">Profile</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            <li><a href="{% url 'products' %}">Products</a></li>
+        </ul>
+</nav>
+<nav>
+        <ul>
+            <li><a href="{% url 'electronics' %}">Electronics</a></li>
+            <li><a href="{% url 'skin care' %}">Skin care/a></li>
+            <li><a href="{% url 'cloths' %}">Cloths</a></li>
+            <li><a href="{% url 'sports' %}">Sports</a></li>
+        </ul>
+        </nav>
+</header>
+
+{% block page_heading %}Hostinger{% endblock %}
